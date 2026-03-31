@@ -49,15 +49,15 @@ html = f"""<!DOCTYPE html>
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{topic['title']} | Web3ナビ</title>
+  <title>{topic['title']} | CryptoGate</title>
   <meta name="description" content="{topic['desc']}">
   <meta name="keywords" content="{topic['kw']}">
-  <meta property="og:title" content="{topic['title']} | Web3ナビ">
+  <meta property="og:title" content="{topic['title']} | CryptoGate">
   <meta property="og:description" content="{topic['desc']}">
   <meta property="og:url" content="{BASE_URL}/trending/{slug}/">
   <meta property="og:type" content="article">
   <meta property="og:locale" content="ja_JP">
-  <meta property="og:site_name" content="Web3ナビ">
+  <meta property="og:site_name" content="CryptoGate">
   <link rel="canonical" href="{BASE_URL}/trending/{slug}/">
   <link rel="stylesheet" href="../../style.css">
   <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
@@ -66,7 +66,7 @@ html = f"""<!DOCTYPE html>
 
   <header class="site-header">
     <div class="container">
-      <a href="../../" class="logo">Web3ナビ</a>
+      <a href="../../" class="logo">CryptoGate<span class="logo-sub">クリプトゲート</span></a>
       <nav class="nav-links">
         <a href="../../">トップ</a>
         <a href="../../ranking/">ランキング</a>
@@ -113,7 +113,7 @@ html = f"""<!DOCTYPE html>
 
   <footer class="site-footer">
     <div class="container">
-      <p>© 2026 Web3ナビ｜当サイトにはアフィリエイトリンクが含まれます。投資は自己責任でお願いします。</p>
+      <p>© 2026 CryptoGate｜当サイトにはアフィリエイトリンクが含まれます。投資は自己責任でお願いします。</p>
     </div>
   </footer>
 
