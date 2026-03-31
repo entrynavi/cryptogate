@@ -153,13 +153,20 @@ strong{color:var(--text-primary);font-weight:600}
 .toc-mobile a{color:var(--text-tertiary);font-size:.82rem}
 @media(max-width:1100px){.toc-mobile{display:block}}
 
-.table-wrap{overflow-x:auto;margin:1.5rem 0;border-radius:var(--radius-lg);border:1px solid var(--border)}
-table{font-size:.85rem}
+.table-wrap{overflow-x:auto;margin:1.5rem 0;border-radius:var(--radius-lg);border:1px solid var(--border);background:var(--bg-secondary)}
+table{font-size:.85rem;width:100%;border-collapse:collapse}
 th{background:var(--bg-tertiary);color:var(--text-primary);font-weight:600;text-align:left;padding:.75rem 1rem;white-space:nowrap;font-size:.8rem}
 td{padding:.7rem 1rem;border-top:1px solid var(--border);color:var(--text-secondary)}
 tr:hover td{background:rgba(255,255,255,0.02)}
+tr.recommended td{background:rgba(59,130,246,0.06);border-left-color:var(--accent)}
+tr.recommended td:first-child{border-left:3px solid var(--accent);position:relative}
+tr.recommended td:first-child::after{content:'PICK';position:absolute;top:4px;right:4px;padding:1px 6px;border-radius:3px;font-size:.55rem;font-weight:700;background:var(--accent);color:#fff;letter-spacing:.04em}
+tbody tr:nth-child(even) td{background:rgba(255,255,255,0.01)}
+tbody tr.recommended:nth-child(even) td{background:rgba(59,130,246,0.08)}
+td strong{color:var(--text-primary)}
 .highlight-col{background:var(--accent-subtle) !important}
 th.highlight-col{background:var(--accent-muted) !important}
+.text-sm{font-size:.8rem}
 .rank-badge{display:inline-flex;align-items:center;justify-content:center;width:26px;height:26px;border-radius:6px;font-weight:800;font-size:.75rem;color:#fff}
 .rank-1{background:var(--yellow)}
 .rank-2{background:#6b7280}
