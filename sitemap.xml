@@ -66,4 +66,23 @@
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
+  <url>
+    <loc>https://chidori0543-sys.github.io/web3-navi/trending/wallet-erabikata/</loc>
+    <lastmod>2026-03-31</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url><loc>https://chidori0543-sys.github.io/web3-navi/trending/bitcoin-toha/</loc><lastmod>2026-03-31</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://chidori0543-sys.github.io/web3-navi/trending/ethereum-toha/</loc><lastmod>2026-03-31</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://chidori0543-sys.github.io/web3-navi/trending/defi-toha/</loc><lastmod>2026-03-31</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://chidori0543-sys.github.io/web3-navi/trending/nft-toha/</loc><lastmod>2026-03-31</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://chidori0543-sys.github.io/web3-navi/trending/staking-guide/</loc><lastmod>2026-03-31</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://chidori0543-sys.github.io/web3-navi/trending/airdrop-guide/</loc><lastmod>2026-03-31</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://chidori0543-sys.github.io/web3-navi/trending/tax-crypto-japan/</loc><lastmod>2026-03-31</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://chidori0543-sys.github.io/web3-navi/trending/leverage-trading/</loc><lastmod>2026-03-31</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://chidori0543-sys.github.io/web3-navi/trending/memecoin-guide/</loc><lastmod>2026-03-31</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://chidori0543-sys.github.io/web3-navi/trending/layer2-guide/</loc><lastmod>2026-03-31</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://chidori0543-sys.github.io/web3-navi/trending/dex-vs-cex/</loc><lastmod>2026-03-31</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://chidori0543-sys.github.io/web3-navi/trending/seed-phrase/</loc><lastmod>2026-03-31</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://chidori0543-sys.github.io/web3-navi/trending/gas-fee-guide/</loc><lastmod>2026-03-31</lastmod><changefreq>monthly</changefreq><priority>0.5</priority></url>
 </urlset>
