@@ -405,15 +405,16 @@ body > * { position: relative; z-index: 1; }
 .em-icon.em-ledger { background: linear-gradient(135deg, #ff6b35, #e05520); }
 .em-icon.em-safepal { background: linear-gradient(135deg, #8b5cf6, #7c3aed); }
 /* Exchange logo images */
-.em-icon img {
+.em-icon.has-logo {
+  background: transparent !important;
+  padding: 6px;
+  overflow: visible;
+}
+.em-icon.has-logo img {
   width: 100%;
   height: 100%;
   object-fit: contain;
-  border-radius: 10px;
-}
-.em-icon.has-logo {
-  padding: 0;
-  overflow: hidden;
+  filter: none;
 }
 
 .exchange-mark .em-info h3 {
