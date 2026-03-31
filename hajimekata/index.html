@@ -36,7 +36,7 @@
   <header class="site-header">
     <div class="container">
       <a href="../" class="logo">Web3ナビ</a>
-      <button class="nav-toggle" aria-label="メニューを開く">☰</button>
+      <button class="nav-toggle" aria-label="メニューを開く"><i data-lucide="menu" style="width:20px;height:20px"></i></button>
       <nav class="nav-links">
         <a href="../">トップ</a>
         <a href="../ranking/">ランキング</a>
@@ -129,7 +129,7 @@
       </ul>
 
       <div class="info-box warning" data-aos="fade-up">
-        <h4>⚠ リスクに関する注意</h4>
+        <h4>リスクに関する注意</h4>
         <p>仮想通貨への投資にはリスクが伴います。価格の急落により元本を大きく下回る可能性があります。投資判断はご自身の責任で行い、<strong>必ず余裕資金の範囲</strong>で始めてください。当サイトは特定の投資行動を推奨するものではありません。</p>
       </div>
 
@@ -156,7 +156,7 @@
       <div class="cards-grid" data-aos="fade-up">
         <div class="card" data-aos="fade-up">
           <span class="card-tag" style="background:var(--coincheck);color:#fff;">国内No.1</span>
-          <h3>🥇 Coincheck（コインチェック）</h3>
+          <h3>Coincheck（コインチェック）</h3>
           <p>国内最大手の取引所。アプリダウンロード数No.1で、初心者にも使いやすい設計が魅力。口座開設だけで<strong>2,500円分のBTCがもらえる</strong>キャンペーンを実施中。入金不要で始められるので、最初の1社として最適です。</p>
           <div class="mt-2">
             <a href="https://campaign.coincheck.com/invitation?code=EI6y7cY" class="btn btn-coincheck btn-sm" target="_blank" rel="noopener noreferrer">無料で口座開設する</a>
@@ -165,7 +165,7 @@
 
         <div class="card" data-aos="fade-up" data-aos-delay="100">
           <span class="card-tag" style="background:var(--binance);color:#000;">世界最大手</span>
-          <h3>🥈 Binance Japan（バイナンスジャパン）</h3>
+          <h3>Binance Japan（バイナンスジャパン）</h3>
           <p>世界最大の仮想通貨取引所Binanceの日本法人。豊富な取扱通貨数と高い流動性が強み。PayPay入金にも対応しており、日本円での購入もスムーズ。グローバルな環境で取引したい方におすすめです。</p>
           <div class="mt-2">
             <a href="https://s.binance.com/uLE79gbI?ref=GRO_40299_HCO4G" class="btn btn-binance btn-sm" target="_blank" rel="noopener noreferrer">無料で口座開設する</a>
@@ -174,7 +174,7 @@
 
         <div class="card" data-aos="fade-up" data-aos-delay="200">
           <span class="card-tag" style="background:var(--mexc);color:#fff;">海外最大級</span>
-          <h3>🥉 MEXC（エムイーエックスシー）</h3>
+          <h3>MEXC（エムイーエックスシー）</h3>
           <p>海外最大級の取引所で、2,000種類以上の通貨を取り扱い。新規登録で<strong>20USDT（約3,000円相当）</strong>がもらえるキャンペーンあり。国内取引所に慣れてきたら、次のステップとして挑戦してみましょう。</p>
           <div class="mt-2">
             <a href="../mexc/" class="btn btn-mexc btn-sm">詳細レビューを見る</a>
@@ -434,17 +434,8 @@
 
 <!-- Floating CTA (mobile) -->
 <div class="floating-cta" id="floatingCta">
-  <div class="fc-text">🔥 おすすめ取引所<small>最大10,000USDTボーナス</small></div>
+  <div class="fc-text">おすすめ取引所<small>最大10,000USDTボーナス</small></div>
   <a href="../ranking/" class="fc-btn">ランキングを見る</a>
-</div>
-
-<!-- Social Proof Popup -->
-<div class="social-proof" id="socialProof">
-  <span class="sp-icon">✅</span>
-  <div>
-    <div class="sp-text" id="spText"></div>
-    <div class="sp-time" id="spTime"></div>
-  </div>
 </div>
 
 <script>
@@ -455,34 +446,6 @@ if (fcta) {
     fcta.classList.toggle('visible', window.scrollY > 600);
   });
 }
-
-// Social proof notifications
-const proofData = [
-  { text: '東京都のユーザーが<strong>MEXC</strong>に登録しました', time: '2分前' },
-  { text: '大阪府のユーザーが<strong>Bitget</strong>で取引を開始', time: '5分前' },
-  { text: '福岡県のユーザーが<strong>Coincheck</strong>に登録しました', time: '8分前' },
-  { text: '北海道のユーザーが<strong>Binance Japan</strong>を開設', time: '12分前' },
-  { text: '神奈川県のユーザーが<strong>Hyperliquid</strong>を利用開始', time: '15分前' },
-  { text: '愛知県のユーザーが<strong>Ledger</strong>を購入しました', time: '18分前' },
-  { text: '京都府のユーザーが<strong>Bitget</strong>コピートレード開始', time: '22分前' },
-];
-let proofIndex = 0;
-const spEl = document.getElementById('socialProof');
-const spText = document.getElementById('spText');
-const spTime = document.getElementById('spTime');
-
-function showProof() {
-  if (!spEl || !spText) return;
-  const d = proofData[proofIndex % proofData.length];
-  spText.innerHTML = d.text;
-  spTime.textContent = d.time;
-  spEl.classList.add('show');
-  setTimeout(() => spEl.classList.remove('show'), 4000);
-  proofIndex++;
-}
-setTimeout(showProof, 5000);
-setInterval(showProof, 15000);
-
 // Countdown timers
 document.querySelectorAll('[data-countdown]').forEach(el => {
   const target = new Date(el.dataset.countdown).getTime();

@@ -32,7 +32,7 @@
         <a href="../hajimekata/">始め方</a>
         <a href="../campaign/">キャンペーン</a>
       </nav>
-      <button class="nav-toggle" aria-label="メニュー">☰</button>
+      <button class="nav-toggle" aria-label="メニュー"><i data-lucide="menu" style="width:20px;height:20px"></i></button>
     </div>
   </header>
 
@@ -66,14 +66,14 @@
 
       <div class="article-meta">
         <span class="tag">海外取引所</span>
-        <span class="campaign-badge badge-hot">🎁 最大6,200USDT</span>
+        <span class="campaign-badge badge-hot">最大6,200USDT</span>
         <span class="reading-time">読了約7分</span>
       </div>
 
       <h1>Bitget（ビットゲット）徹底レビュー【2026年最新】</h1>
-<div style="display:flex;gap:8px;flex-wrap:wrap;margin:12px 0 20px;" data-aos="fade-up">
-  <span style="background:rgba(34,197,94,0.15);color:#4ade80;padding:4px 12px;border-radius:20px;font-size:0.8rem;">✅ バルバドス認可</span>
-  <span style="background:rgba(167,139,250,0.15);color:#a78bfa;padding:4px 12px;border-radius:20px;font-size:0.8rem;">🔒 Merkle Tree準備金証明</span>
+<div class="exchange-badges" data-aos="fade-up">
+  <span class="exchange-badge exchange-badge--green">バルバドス認可</span>
+  <span class="exchange-badge exchange-badge--blue">Merkle Tree準備金証明</span>
 </div>
 
       <p>Bitgetはコピートレード機能で世界的に有名な海外暗号資産取引所。プロトレーダーの取引を自動コピーできるため、初心者でも高度な取引戦略を活用可能。最大6,200USDTのウェルカムボーナスも見逃せません。</p>
@@ -137,7 +137,7 @@
       <p>コピートレードで利益が発生した場合、エリートトレーダーに利益の一部（通常8〜10%）が分配されます。利益が出なかった場合は分配金は発生しないため、フォロワーにとって公平な仕組みです。</p>
 
       <div class="info-box success" data-aos="fade-up">
-        <h4>🎁 コピートレード初回利用ボーナス</h4>
+        <h4>コピートレード初回利用ボーナス</h4>
         <p>初めてコピートレード機能を利用するユーザーには、最大100USDT相当のボーナスが進呈されます。まずは少額からお試しください。</p>
       </div>
 
@@ -152,7 +152,7 @@
       </ol>
 
       <div class="info-box warning" data-aos="fade-up">
-        <h4>⚠️ 注意</h4>
+        <h4>注意</h4>
         <p>海外取引所は日本の投資者保護の対象外です。レバレッジ取引・コピートレードともに元本割れのリスクがあります。余裕資金での投資を心がけましょう。</p>
       </div>
 
@@ -161,7 +161,7 @@
       <h2 id="campaign">最新キャンペーン【2026年3月】</h2>
 
       <div class="info-box success" data-aos="fade-up">
-        <h4>🎉 開催中のキャンペーン一覧</h4>
+        <h4>開催中のキャンペーン一覧</h4>
         <ul>
           <li>新規登録＋入金で最大<strong>6,200USDT</strong>相当ボーナス</li>
           <li>コピートレード初回利用で最大<strong>100USDT</strong></li>
@@ -334,17 +334,8 @@
 
 <!-- Floating CTA (mobile) -->
 <div class="floating-cta" id="floatingCta">
-  <div class="fc-text">🔥 おすすめ取引所<small>最大10,000USDTボーナス</small></div>
+  <div class="fc-text">おすすめ取引所<small>最大10,000USDTボーナス</small></div>
   <a href="../ranking/" class="fc-btn">ランキングを見る</a>
-</div>
-
-<!-- Social Proof Popup -->
-<div class="social-proof" id="socialProof">
-  <span class="sp-icon">✅</span>
-  <div>
-    <div class="sp-text" id="spText"></div>
-    <div class="sp-time" id="spTime"></div>
-  </div>
 </div>
 
 <script>
@@ -355,34 +346,6 @@ if (fcta) {
     fcta.classList.toggle('visible', window.scrollY > 600);
   });
 }
-
-// Social proof notifications
-const proofData = [
-  { text: '東京都のユーザーが<strong>MEXC</strong>に登録しました', time: '2分前' },
-  { text: '大阪府のユーザーが<strong>Bitget</strong>で取引を開始', time: '5分前' },
-  { text: '福岡県のユーザーが<strong>Coincheck</strong>に登録しました', time: '8分前' },
-  { text: '北海道のユーザーが<strong>Binance Japan</strong>を開設', time: '12分前' },
-  { text: '神奈川県のユーザーが<strong>Hyperliquid</strong>を利用開始', time: '15分前' },
-  { text: '愛知県のユーザーが<strong>Ledger</strong>を購入しました', time: '18分前' },
-  { text: '京都府のユーザーが<strong>Bitget</strong>コピートレード開始', time: '22分前' },
-];
-let proofIndex = 0;
-const spEl = document.getElementById('socialProof');
-const spText = document.getElementById('spText');
-const spTime = document.getElementById('spTime');
-
-function showProof() {
-  if (!spEl || !spText) return;
-  const d = proofData[proofIndex % proofData.length];
-  spText.innerHTML = d.text;
-  spTime.textContent = d.time;
-  spEl.classList.add('show');
-  setTimeout(() => spEl.classList.remove('show'), 4000);
-  proofIndex++;
-}
-setTimeout(showProof, 5000);
-setInterval(showProof, 15000);
-
 // Countdown timers
 document.querySelectorAll('[data-countdown]').forEach(el => {
   const target = new Date(el.dataset.countdown).getTime();

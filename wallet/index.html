@@ -26,14 +26,14 @@
 <!-- ===== Header ===== -->
 <header class="site-header">
   <div class="container">
-    <a href="/" class="logo">Web3ナビ<span>🧭</span></a>
+    <a href="/" class="logo">Web3ナビ</a>
     <nav class="nav-links" id="navLinks">
       <a href="/ranking/">取引所ランキング</a>
       <a href="/wallet/">ウォレット比較</a>
       <a href="/defi-tools/">DeFiツール</a>
       <a href="/campaign/">キャンペーン</a>
     </nav>
-    <button class="nav-toggle" id="navToggle" aria-label="メニュー">☰</button>
+    <button class="nav-toggle" id="navToggle" aria-label="メニュー"><i data-lucide="menu" style="width:20px;height:20px"></i></button>
   </div>
 </header>
 
@@ -88,7 +88,7 @@
     <p>ハードウェアウォレットは秘密鍵をオフラインで保管するデバイスです。インターネットに接続されないため、リモートハッキングのリスクを根本的に排除できます。取引所に預ける場合と比べ、自分自身で資産を完全にコントロールできるのが最大のメリットです。</p>
 
     <div class="info-box warning" data-aos="fade-up">
-      <h4>⚠️ こんな方は今すぐウォレットの導入を</h4>
+      <h4>こんな方は今すぐウォレットの導入を</h4>
       <p>仮想通貨の総保有額が<strong>10万円を超えている方</strong>は、ハードウェアウォレットの導入を検討してください。資産が増えるほどハッキング被害の影響は大きくなります。</p>
     </div>
 
@@ -215,7 +215,7 @@
     </ul>
 
     <div class="info-box success" data-aos="fade-up">
-      <h4>🎫 Triaアクセスコード</h4>
+      <h4>Triaアクセスコード</h4>
       <p>現在Triaは招待制で運用されています。以下のアクセスコードを使って登録できます：<strong>C77B6U2297</strong></p>
     </div>
 
@@ -228,15 +228,15 @@
 
     <div class="cards-grid" data-aos="fade-up">
       <div class="card" data-aos="fade-up">
-        <h3>🏆 本格派 → Ledger</h3>
+        <h3>本格派 → Ledger</h3>
         <p>大きな資産を管理したい方、対応通貨数の多さを重視する方、DeFiを本格的に活用する方にはLedgerがベストチョイス。CC EAL5+認定チップによる堅牢なセキュリティと、Ledger Liveによる統合管理が魅力です。</p>
       </div>
       <div class="card" data-aos="fade-up" data-aos-delay="100">
-        <h3>💰 コスパ重視 → SafePal</h3>
+        <h3>コスパ重視 → SafePal</h3>
         <p>なるべく低コストでハードウェアウォレットを導入したい方にはSafePal S1がおすすめ。エアギャップ設計で高いセキュリティを維持しつつ、Ledgerの半額以下で購入できます。</p>
       </div>
       <div class="card" data-aos="fade-up" data-aos-delay="200">
-        <h3>🚀 Web3初心者 → Tria</h3>
+        <h3>Web3初心者 → Tria</h3>
         <p>シードフレーズの管理に不安がある方、まずは無料でウォレットを試したい方にはTriaがぴったり。ソーシャルログインで簡単に始められ、Web3の世界への第一歩に最適です。</p>
       </div>
     </div>
@@ -377,17 +377,8 @@ document.querySelectorAll('.faq-q').forEach(function(q) {
 
 <!-- Floating CTA (mobile) -->
 <div class="floating-cta" id="floatingCta">
-  <div class="fc-text">🔥 おすすめ取引所<small>最大10,000USDTボーナス</small></div>
+  <div class="fc-text">おすすめ取引所<small>最大10,000USDTボーナス</small></div>
   <a href="../ranking/" class="fc-btn">ランキングを見る</a>
-</div>
-
-<!-- Social Proof Popup -->
-<div class="social-proof" id="socialProof">
-  <span class="sp-icon">✅</span>
-  <div>
-    <div class="sp-text" id="spText"></div>
-    <div class="sp-time" id="spTime"></div>
-  </div>
 </div>
 
 <script>
@@ -398,34 +389,6 @@ if (fcta) {
     fcta.classList.toggle('visible', window.scrollY > 600);
   });
 }
-
-// Social proof notifications
-const proofData = [
-  { text: '東京都のユーザーが<strong>MEXC</strong>に登録しました', time: '2分前' },
-  { text: '大阪府のユーザーが<strong>Bitget</strong>で取引を開始', time: '5分前' },
-  { text: '福岡県のユーザーが<strong>Coincheck</strong>に登録しました', time: '8分前' },
-  { text: '北海道のユーザーが<strong>Binance Japan</strong>を開設', time: '12分前' },
-  { text: '神奈川県のユーザーが<strong>Hyperliquid</strong>を利用開始', time: '15分前' },
-  { text: '愛知県のユーザーが<strong>Ledger</strong>を購入しました', time: '18分前' },
-  { text: '京都府のユーザーが<strong>Bitget</strong>コピートレード開始', time: '22分前' },
-];
-let proofIndex = 0;
-const spEl = document.getElementById('socialProof');
-const spText = document.getElementById('spText');
-const spTime = document.getElementById('spTime');
-
-function showProof() {
-  if (!spEl || !spText) return;
-  const d = proofData[proofIndex % proofData.length];
-  spText.innerHTML = d.text;
-  spTime.textContent = d.time;
-  spEl.classList.add('show');
-  setTimeout(() => spEl.classList.remove('show'), 4000);
-  proofIndex++;
-}
-setTimeout(showProof, 5000);
-setInterval(showProof, 15000);
-
 // Countdown timers
 document.querySelectorAll('[data-countdown]').forEach(el => {
   const target = new Date(el.dataset.countdown).getTime();

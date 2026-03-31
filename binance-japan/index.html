@@ -32,7 +32,7 @@
         <a href="../hajimekata/">始め方</a>
         <a href="../campaign/">キャンペーン</a>
       </nav>
-      <button class="nav-toggle" aria-label="メニュー">☰</button>
+      <button class="nav-toggle" aria-label="メニュー"><i data-lucide="menu" style="width:20px;height:20px"></i></button>
     </div>
   </header>
 
@@ -49,14 +49,14 @@
 
       <div class="article-meta">
         <span class="tag">国内取引所</span>
-        <span class="campaign-badge">🎁 最大3,600円</span>
+        <span class="campaign-badge">最大3,600円</span>
         <span class="reading-time">読了約6分</span>
       </div>
 
       <h1>Binance Japan（バイナンスジャパン）完全ガイド【2026年最新】</h1>
-<div style="display:flex;gap:8px;flex-wrap:wrap;margin:12px 0 20px;" data-aos="fade-up">
-  <span style="background:rgba(34,197,94,0.15);color:#4ade80;padding:4px 12px;border-radius:20px;font-size:0.8rem;">✅ 日本金融庁登録済</span>
-  <span style="background:rgba(167,139,250,0.15);color:#a78bfa;padding:4px 12px;border-radius:20px;font-size:0.8rem;">🔒 コールドウォレット保管</span>
+<div class="exchange-badges" data-aos="fade-up">
+  <span class="exchange-badge exchange-badge--green">日本金融庁登録済</span>
+  <span class="exchange-badge exchange-badge--blue">コールドウォレット保管</span>
 </div>
 
       <p>世界最大の暗号資産取引所Binanceの日本法人。金融庁登録済みで安心。グローバルな技術基盤×日本の法規制準拠のハイブリッド。この記事ではBinance Japanの特徴・手数料・キャンペーンから口座開設方法まで徹底解説します。</p>
@@ -307,17 +307,8 @@
 
 <!-- Floating CTA (mobile) -->
 <div class="floating-cta" id="floatingCta">
-  <div class="fc-text">🔥 おすすめ取引所<small>最大10,000USDTボーナス</small></div>
+  <div class="fc-text">おすすめ取引所<small>最大10,000USDTボーナス</small></div>
   <a href="../ranking/" class="fc-btn">ランキングを見る</a>
-</div>
-
-<!-- Social Proof Popup -->
-<div class="social-proof" id="socialProof">
-  <span class="sp-icon">✅</span>
-  <div>
-    <div class="sp-text" id="spText"></div>
-    <div class="sp-time" id="spTime"></div>
-  </div>
 </div>
 
 <script>
@@ -328,34 +319,6 @@ if (fcta) {
     fcta.classList.toggle('visible', window.scrollY > 600);
   });
 }
-
-// Social proof notifications
-const proofData = [
-  { text: '東京都のユーザーが<strong>MEXC</strong>に登録しました', time: '2分前' },
-  { text: '大阪府のユーザーが<strong>Bitget</strong>で取引を開始', time: '5分前' },
-  { text: '福岡県のユーザーが<strong>Coincheck</strong>に登録しました', time: '8分前' },
-  { text: '北海道のユーザーが<strong>Binance Japan</strong>を開設', time: '12分前' },
-  { text: '神奈川県のユーザーが<strong>Hyperliquid</strong>を利用開始', time: '15分前' },
-  { text: '愛知県のユーザーが<strong>Ledger</strong>を購入しました', time: '18分前' },
-  { text: '京都府のユーザーが<strong>Bitget</strong>コピートレード開始', time: '22分前' },
-];
-let proofIndex = 0;
-const spEl = document.getElementById('socialProof');
-const spText = document.getElementById('spText');
-const spTime = document.getElementById('spTime');
-
-function showProof() {
-  if (!spEl || !spText) return;
-  const d = proofData[proofIndex % proofData.length];
-  spText.innerHTML = d.text;
-  spTime.textContent = d.time;
-  spEl.classList.add('show');
-  setTimeout(() => spEl.classList.remove('show'), 4000);
-  proofIndex++;
-}
-setTimeout(showProof, 5000);
-setInterval(showProof, 15000);
-
 // Countdown timers
 document.querySelectorAll('[data-countdown]').forEach(el => {
   const target = new Date(el.dataset.countdown).getTime();
