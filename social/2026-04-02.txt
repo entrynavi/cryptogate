@@ -1,6 +1,6 @@
-シードフレーズをスクリーンショットで保存していませんか？
+DeFiでは年利10%以上のリターンが得られることもありますが、その分リスクもあります。
 
-スマートフォンが乗っ取られた場合、資産をすべて失うリスクがあります。安全な管理方法をこちらで解説しています。
-https://entrynavi.github.io/cryptogate/trending/seed-phrase/
+ラグプル（詐欺）やハッキングなどの危険性を理解した上で始めることが大切です。
+https://entrynavi.github.io/cryptogate/trending/defi-toha/
 
-#セキュリティ #シードフレーズ
+#DeFi #リスク管理
