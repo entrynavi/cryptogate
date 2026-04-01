@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1500 500" width="1500" height="500">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#060910"/>
+      <stop offset="50%" style="stop-color:#0a0e1a"/>
+      <stop offset="100%" style="stop-color:#0f1629"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#3b82f6"/>
+      <stop offset="50%" style="stop-color:#6366f1"/>
+      <stop offset="100%" style="stop-color:#8b5cf6"/>
+    </linearGradient>
+    <linearGradient id="fade" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#3b82f6;stop-opacity:0.15"/>
+      <stop offset="100%" style="stop-color:#8b5cf6;stop-opacity:0.05"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1500" height="500" fill="url(#bg)"/>
+
+  <!-- Subtle grid -->
+  <g opacity="0.04" stroke="#3b82f6" stroke-width="0.5">
+    <line x1="0" y1="100" x2="1500" y2="100"/>
+    <line x1="0" y1="200" x2="1500" y2="200"/>
+    <line x1="0" y1="300" x2="1500" y2="300"/>
+    <line x1="0" y1="400" x2="1500" y2="400"/>
+    <line x1="300" y1="0" x2="300" y2="500"/>
+    <line x1="600" y1="0" x2="600" y2="500"/>
+    <line x1="900" y1="0" x2="900" y2="500"/>
+    <line x1="1200" y1="0" x2="1200" y2="500"/>
+  </g>
+
+  <!-- Accent gradient bar at bottom -->
+  <rect x="0" y="490" width="1500" height="10" fill="url(#accent)"/>
+
+  <!-- Left glow -->
+  <ellipse cx="200" cy="250" rx="300" ry="200" fill="url(#fade)"/>
+
+  <!-- Diamond icon -->
+  <g transform="translate(220, 250)">
+    <path d="M0 -80 L80 0 L0 80 L-80 0 Z" fill="none" stroke="url(#accent)" stroke-width="4" stroke-linejoin="round" opacity="0.8"/>
+    <path d="M0 -80 L0 80" stroke="url(#accent)" stroke-width="1" opacity="0.2"/>
+    <path d="M-80 0 L80 0" stroke="url(#accent)" stroke-width="1" opacity="0.2"/>
+    <circle cx="0" cy="0" r="16" fill="url(#accent)"/>
+    <circle cx="0" cy="0" r="6" fill="white" opacity="0.8"/>
+  </g>
+
+  <!-- Text -->
+  <text x="420" y="225" font-family="'SF Pro Display','Helvetica Neue',Arial,sans-serif" font-size="72" font-weight="700" fill="white" letter-spacing="3">CryptoGate</text>
+  <text x="420" y="275" font-family="'SF Pro Display','Helvetica Neue',Arial,sans-serif" font-size="24" fill="#94a3b8" letter-spacing="6">クリプトゲート</text>
+  <text x="420" y="330" font-family="'SF Pro Display','Helvetica Neue',Arial,sans-serif" font-size="20" fill="#64748b" letter-spacing="1">仮想通貨の入口がここにある ─ 取引所比較・始め方・最新情報</text>
+
+  <!-- Right side decorative elements -->
+  <g opacity="0.06">
+    <path d="M1150 100 L1200 150 L1150 200 L1100 150 Z" fill="none" stroke="#3b82f6" stroke-width="1.5"/>
+    <path d="M1300 200 L1340 240 L1300 280 L1260 240 Z" fill="none" stroke="#6366f1" stroke-width="1.5"/>
+    <path d="M1200 320 L1230 350 L1200 380 L1170 350 Z" fill="none" stroke="#8b5cf6" stroke-width="1.5"/>
+  </g>
+</svg>
